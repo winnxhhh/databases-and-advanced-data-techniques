@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Town Rankings</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+      <h1>Towns with the Highest Resale Price Every Month</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Town</th>
+                <th>Highest Resale Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#rankings}}
+            <tr>
+                <td>{{year}}</td>
+                <td>{{month}}</td>
+                <td>{{town}}</td>
+                <td>${{highest_price}}</td>
+            </tr>
+            {{/rankings}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>
+

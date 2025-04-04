@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Flat Types</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+        <h1>Common Flat Types</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Flat Type</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#rankings}}
+            <tr>
+                <td>{{flat_type}}</td>
+                <td>{{count}}</td>
+            </tr>
+            {{/rankings}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>

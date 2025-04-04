@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects of COVID-19 on Resale Prices</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+        <h1>Effects of COVID-19 on Resale Prices</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Average Resale Price</th>
+                <th>Period</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{year}}</td>
+                <td>{{month}}</td>
+                <td>${{average_resale_price}}</td>
+                <td>{{period}}</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>

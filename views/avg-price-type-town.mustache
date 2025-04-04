@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Prices by Flat Type and Town</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+        <h1>Average Prices by Flat Type and Town</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Town Name</th>
+                <th>Flat Type</th>
+                <th>Average Price (SGD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{town_name}}</td>
+                <td>{{flat_type}}</td>
+                <td>${{average_price}}</td>
+            </tr>
+            {{/data}}
+            {{^data}}
+            <tr>
+                <td colspan="3">No data available</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>

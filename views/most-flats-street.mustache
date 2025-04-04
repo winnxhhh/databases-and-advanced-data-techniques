@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Flat Types</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+        <h1>Top 10 Streets with Most Resale Flats</h1>    
+    </header>
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Street Name</th>
+                <th>Town</th>
+                <th>Number of Resale Flats</th>
+                <th>Average Resale Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#rankings}}
+            <tr>
+                <td>{{street_name}}</td>
+                <td>{{town}}</td>
+                <td>{{number_of_resale_flats}}</td>
+                <td>${{average_resale_price}}</td>
+            </tr>
+            {{/rankings}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>

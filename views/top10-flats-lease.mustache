@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Years with Most Flats Built</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Start of Self Written Code -->
+    <header>
+        <h1>Top 10 Years with Most Flats Built</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Year Built</th>
+                <th>Number of Flats Built</th>
+                <th>Average Resale Price (SGD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#rankings}}
+            <tr>
+                <td>{{year_built}}</td>
+                <td>{{flats_built}}</td>
+                <td>${{average_price}}</td>
+            </tr>
+            {{/rankings}}
+            {{^rankings}}
+            <tr>
+                <td colspan="3">No data available</td>
+            </tr>
+            {{/rankings}}
+        </tbody>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div>
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+    <!-- End of Self Written Code -->
+</body>
+</html>
