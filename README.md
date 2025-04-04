@@ -6,4 +6,4 @@ Our CSV file contains public housing data in Singapore, sourced from https://dat
 
 We then made a simple web application using Node.js and Mustache to display the results of our various queries to the database.
 
-This was made in a Coursera Lab environment, and can be accessed in this link: https://hub.labs.coursera.org:443/connect/sharedalsqcxmb?forceRefresh=false&path=%2F%3Ffolder%3D%2Fhome%2Fcoder%2Fproject&isLabVersioning=true 
+This was made in a Coursera Lab environment, and can be accessed in this link: https://hub.labs.coursera.org:443/connect/sharedalsqcxmb?forceRefresh=false&path=%2F%3Ffolder%3D%2Fhome%2Fcoder%2Fproject&isLabVersioning=true. Please use the environment in the link above to access the web application.
